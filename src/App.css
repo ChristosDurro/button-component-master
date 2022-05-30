@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Noto+Sans+JP:wght@500;700&family=Poppins:wght@500&family=Ubuntu+Mono&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  display: flex;
+  position: relative;
+}
+
+.navbar {
+  width: 15%;
+  background-color: #FAFBFD;
+  font-family: 'Noto Sans JP', sans-serif;
+  padding: 10% 0 0 5%;
+  display: flex;
+  flex-direction: column;
+}
+
+ul {
+  position: fixed;
+}
+
+.nav-items {
+  color: #9E9E9E;
+  font-size: 14px;
+  font-weight: 500;
+  list-style: none;
+  margin-bottom: 30%;
+}
+
+#active {
+  color: #090F31;
+  font-weight: 700;
+}
+
+/* BUTTON SECTION */
+
+.button-section {
+  width: 100%;
+  margin: 3% 0 0 5%;
+}
+
+.title {
+  color: #4F4F4F;
+  font-family: 'Poppins', sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.variants {
+  display: flex;
+  align-items: center;
+  margin-bottom: 45px;
+}
+
+
+.btn-display {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 3% 10% 0 0;
+}
+
+.btn-display p {
+  font-size: 12px;
+  font-family: 'Ubuntu Mono', monospace;
+  margin-bottom: 12px;
+  width: 250px;
+}
+
+.btn {
+  font-size: 14px;
+  font-weight: 500;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-family: 'Noto Sans JP', sans-serif;
+  border: none;
+  box-shadow: 0 2px 3px rgba(0, 49, 202, 0.2);
+  display: flex;
+  align-items: center;
+}
+
+.left {
+  margin-right: 10px;
+}
+
+.right {
+  margin-left: 10px;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 20
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+/* NORMAL BUTTON */
+
+#normal-btn {
+  color: #3F3F3F;
+  background-color: #E0E0E0;
+}
+
+#normal-btn:hover,
+#normal-btn:focus {
+  background-color: #AEAEAE;
+}
+
+/* OUTLINE BUTTON */
+
+#outline-btn {
+  color: #3D5AFE;
+  background-color: inherit;
+  border: 1px solid #3D5AFE;
+}
+
+#outline-btn:hover,
+#outline-btn:focus {
+  background-color: rgba(41, 98, 255, 0.1);
+}
+
+/* TEXT BUTTON */
+
+#text-btn {
+  color: #3D5AFE;
+  background-color: inherit;
+  box-shadow: none;
+  padding: 0;
+}
+
+#text-btn:hover,
+#text-btn:focus {
+  padding: 8px 16px;
+  background-color: rgba(41, 98, 255, 0.1);
+}
+
+/* DISABLED SHADOW BUTTON */
+
+#disabled-shadow {
+  color: white;
+  background-color: #3D5AFE;
+  box-shadow: none;
+}
+
+#disabled-shadow:hover {
+  background-color: #0039CB;
+}
+
+
+/* DISABLED BUTTON */
+
+#disabled-btn {
+  color: #9E9E9E;
+  background-color: #E0E0E0;
+  box-shadow: none;
+}
+
+#disabled-btn:hover {
+  cursor: not-allowed;
+}
+
+/* DISABLED TEXT BUTTON */
+
+#disabled-text-btn {
+  color: #9E9E9E;
+  background-color: inherit;
+  box-shadow: none;
+  padding: 0;
+}
+
+#disabled-text-btn:hover {
+  cursor: not-allowed;
+}
+
+/* ICON VARIANTS */
+
+
+.icon-btn-spacing {
+  margin-top: 45px;
+}
+
+.right-icons {
+  margin-left: 10%;
+}
+
+#icon-variants button {
+  background-color: #2962FF;
+  color: white;
+}
+
+#icon-variants button:hover,
+#icon-variants button:focus {
+  background-color: #0039CB;
+}
+
+/* BUTTON SIZES */
+
+.size-btn {
+  background-color: #2962FF;
+  color: white;
+}
+
+.size-btn:hover,
+.size-btn:focus {
+  background-color: #0039CB;
+}
+
+#sm-btn {
+  padding: 6px 12px;
+}
+
+#md-btn {
+  padding: 8px 16px;
+}
+
+#lg-btn {
+  padding: 11px 22px;
+}
+
+/* COLORED BUTTONS */
+
+#color-variants {
+  margin-bottom: 10%;
+}
+
+#primary-btn {
+  background-color: #2962FF;
+  color: white;
+}
+
+#primary-btn:hover,
+#primary-btn:focus {
+  background-color: #0039CB;
+}
+
+#secondary-btn {
+  background-color: #455A64;
+  color: white;
+}
+
+#secondary-btn:hover,
+#secondary-btn:focus {
+  background-color: #1C313A;
+}
+
+#danger-btn {
+  background-color: #D32F2F;
+  color: white;
+}
+
+#danger-btn:hover,
+#danger-btn:focus {
+  background-color: #9A0007;
+}
+
+/* FOOTER */
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  margin: 0 0 25px;
+  color: #A9A9A9;
+  font-weight: 500;
+}
+
+footer a {
+  color: #A9A9A9;
+  font-weight: 700;
+}
+
+footer a:hover {
+  color: #857f7f;
+}
